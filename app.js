@@ -10,6 +10,15 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+app.get("/upload",(req,res)=>{
+    res.sendFile(path.join(__dirname+"/public/upload.html"));
+})
+
+app.post("/upload",(req,res)=>{
+    
+})
+
 app.listen(3000, () => {
     console.log("Server started at port 3000");
 });
+
